@@ -8,6 +8,7 @@
     <!--     Loads the external CSS stylesheet for the webpage -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>Flora Guard</h1>
     <hr>
@@ -17,7 +18,9 @@
         <p class="inf">Instantly diagnose plant diseases by uploading an image. Accurate results at your fingertips.</p>
     </div>
     <!-- Input element for uploading Image files (accepted extensions = .png, .jpg, .jpeg) -->
-    <input type="file" name="uploadImage" id="uploadImage" accept=".png, .jpg, .jpeg">
+    <div class="wrp">
+        <input class="upload-btn-wrapper" type="file" name="uploadImage" id="uploadImage" accept=".png, .jpg, .jpeg">
+    </div>
     <div class="row">
         <div class="box">
             <!-- Image Box which displays the Uploaded image -->

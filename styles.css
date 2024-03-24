@@ -42,6 +42,19 @@ hr{
     margin: 10px 0px;
 }
 
+#uploadImage{
+    border: 1px solid #5c55552e;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+.wrp{
+    align-items: center;
+    text-align: center;
+    padding: 0% 5%;
+    margin: 0% 25%;
+    color: rgb(13, 13, 13)
+}
 
 .upload-btn-wrapper{
     position: relative;
