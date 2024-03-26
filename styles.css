@@ -6,40 +6,69 @@
 }
 
 html,body{
-    width: 95%;
-    margin: 8% 10% auto;
-    background: rgb(248, 249, 248);
+    width: 100%;
+    margin: 0% 0% auto;
+    background-color: white;
+    /**background: rgb(169, 237, 169);**/
 }
-
+.container{
+    display: flex;
+    width: 100%;
+.left{
+    width: 35%;
+    border-radius: 0% 100% 100% 0%;
+    background-image: url("https://images.unsplash.com/photo-1503149779833-1de50ebe5f8a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxlYXZlc3xlbnwwfHwwfHx8MA%3D%3D");
+}
+.right{
+    width: 65%;
+    background-color: white;
+}}
 @media (min-width: 768px){
     html,body{
-        width: 80%;
-        margin: 35px auto;
+        width: 100%;
+        margin: 0px auto;
     }
 }
 h1 {
-    margin: 0% 31% auto;
+    margin: 5% 20% auto;
     text-transform: uppercase;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 36px;
+    font-size: 58px;
+    background: linear-gradient(to right, #7EB72b, #58801e,#324911, #192408);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.pic{
+    display: block;
+    width: 40%;
+    height: 250px;
+    margin: 2% 30% auto;
+    background-color: white;
+}
+p{
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 0% 39% auto;
+
 }
 
-.im3g{
-    .imgi{
-        width: 40%;
-        height: 40%;
-        margin: 2% 29%;
-    }
+h1 span{
+    color:rgb(126, 183, 34);
+}
+
+
+.txt{
     .inf{
-        font-size: 14px;
+        font-size: 18px;
         color:rgb(126, 183, 34);
-        margin: 5px 0px 15px 0px;
+        margin: 5px 50px 10px 50px;
         text-align: center;
     }
 }
 
 hr{
-    margin: 10px 0px;
+    margin: 7px 0px;
+    border: 1px solid rgba(168, 172, 160, 0.459);
 }
 
 #uploadImage{
@@ -53,8 +82,11 @@ hr{
     text-align: center;
     padding: 0% 5%;
     margin: 0% 25%;
+    background-color: #fff;
     color: rgb(13, 13, 13)
 }
+
+
 
 .upload-btn-wrapper{
     position: relative;
@@ -62,18 +94,18 @@ hr{
     display:inline-block;
     cursor:pointer;
     font-family: 'Poppins',sans-serif;
-    width: 100%;
-    margin: 0px 0px;
-    align-items: center;
+    width: 70%;
+    margin: 5% 10% 5% 15%;
+    
 }
 .upload-file{
     border:2px dashed #eee;
-    color:#aecbe0;
+    color:#9b9b9b;
     background-color: white;
     width:100%;
     height:250px;
     border-radius: 8px;
-    font-size:15px;
+    font-size:12px;
     cursor: pointer;
 }
 .upload-btn-wrapper input[type=file]{
@@ -88,39 +120,43 @@ hr{
 }
 .success-1, .success-2{
     display:none;
-    color: limegreen;
+    color:rgb(126, 183, 34);
+
 }
 .success-1 i, .success-2 i{
-    font-size: 18px !important;
+    font-size: 10px !important;
     margin-left:6px;
     margin-top:4px;
-    color: limegreen;
-    border: 1px solid limegreen;
+    color: rgb(126, 183, 34);
     padding: 5px;
     border-radius: 50%;
 }
 .font-50{
-    font-size:50px;
+    font-size:20px;
 }
 .d-block{
     display:block;
 }
 .btn .upload-file{
-    font-size: 30px;
+    font-size: 20px;
 }
 .upload-btn{
     display:block;
     font-size: 18px;
-    color: limegreen;
+    color: rgb(126, 183, 34);
+    #choose-text-1{
+        font-size: 14px;
+    }
 }
 
 .upload-btn i{
-    font-size: 100px;
+    font-size: 110px;
 }
 
-.imgj{
-    width: 100%;
-    height: 300px;
+img{
+    width: 80%;
+    height: auto;
+    margin-left: 20px;
     display: none;
 }
 
@@ -129,21 +165,22 @@ hr{
     justify-content: space-around;
     flex-direction: row;
     flex-flow: wrap;
-    margin: 20px auto;
+    width: 80%;
+    margin: 0% 0% 20%  10% ;
     }
     
 .box{
-    width: 45%;
+    width:50%;
 }
 
 .box img{
     border-radius: 20px;
-    height: 350px;
+    height: auto;
 }
 
 .box-result p{
-    background: limegreen;
-    color: #fff;
+    background: rgb(126,184,34);
+    color: #ffffff;
     font-weight: bold;
     padding: 10px;
     margin-top: 20px;
@@ -164,28 +201,30 @@ hr{
 
 
 .progress {
-width: 130px;
-height: 130px;
+width: 35%;
+height: 30%;
 position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
+background-color: #fff;
 
 }
 
 .progress > .inner {
 position: absolute;
-color: limegreen; 
-border: 1px solid #9b9b9b;
+color: rgb(126, 183, 34);
+background-color: white;
 }
 
 .progress > svg {
 height: 100%;
+background-color: white;
 display: block;
 }
 
 .init_status{
-    background: limegreen;
+    background: rgb(126, 183, 34);
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -203,11 +242,12 @@ display: block;
 
 .tutorial{
     text-align: center;
-    color: #222222;
+    color: #fcf9f9;
 }
 
 path {
-    stroke: limegreen;
+    stroke: rgb(126, 183, 34);
     stroke-width: 10;
-    fill-opacity: 0.2;
+    fill-opacity: 0.0;
 }
+
